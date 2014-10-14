@@ -1,0 +1,21 @@
+<Alloy>
+	<Window class="container">
+		<Widget src="com.mcongrove.navigationBar" id="navigationBar" />
+		<TableView id="commitTable">
+			<TableViewSection id="conflictSection" class="conflictSection">
+				<HeaderView>
+                	<View class="conflictSectionHeader">
+                		<Label text="Possible Conflicts" id="conflictLabel" />
+                	</View>
+            	</HeaderView>
+			</TableViewSection>
+			<TableViewSection id="changedSection" class="changedSection">
+				<HeaderView>
+                	<View class="changedSectionHeader">
+                		<Label text="Changed Files - ahead of origin/master" id="changedLabel" />
+                	</View>
+            	</HeaderView>				
+			</TableViewSection>			
+		</TableView>
+	</Window>
+</Alloy>
