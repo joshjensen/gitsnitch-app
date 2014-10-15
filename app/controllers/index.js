@@ -153,6 +153,13 @@ function buildTableData() {
 	$.commitTable.setData(data);
 }
 
+function sendPingRequest() {
+	pubnub.publish({
+		channel: config.projectKey + '-connections',
+	 	message: "connection"
+	});
+}
+
 function onMessageFileStat(data) {
 	var changes = data.changes;
 
@@ -168,6 +175,7 @@ function onMessageFileStat(data) {
 	buildTableData();
 
 	didConnect = true;
+	$.pullToRefresh.endRefreshing();	
 }
 
 var onMessageFileStatThrottle = _.throttle(onMessageFileStat, 200, {leading: false});
@@ -176,11 +184,14 @@ pubnub.subscribe({
     channel: config.projectKey + '-filestat',
     callback: onMessageFileStatThrottle,
     connect: function() {
-		pubnub.publish({
-			channel: config.projectKey + '-connections',
-		 	message: "connection"
-		});
+    	sendPingRequest();
     }
+});
+
+checkConnection();
+
+$.pullToRefresh.addEventListener('refreshstart',function(e){
+	sendPingRequest();
 });
 
 $.index.open();
