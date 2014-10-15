@@ -1,4 +1,6 @@
 <Alloy>
-	<View class="container">
-	</View>
+    <TableViewRow id="row">
+        <Label id="fileName" />
+        <View id="developers"/>
+    </TableViewRow>
 </Alloy>

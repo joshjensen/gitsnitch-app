@@ -1,0 +1,9 @@
+<Alloy>
+	<TableViewSection id="changedSection" class="changedSection">
+		<HeaderView>
+        	<View class="changedSectionHeader">
+        		<Label text="Changed Files - ahead of origin/master" id="changedLabel" />
+        	</View>
+    	</HeaderView>				
+	</TableViewSection>	
+</Alloy>

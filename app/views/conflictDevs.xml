@@ -1,0 +1,8 @@
+<Alloy>
+	<View id="wrapper">
+		<Label id="name" />
+		<View id="statusWrapper">
+			<Label id="status" />
+		</View>
+	</View>
+</Alloy>

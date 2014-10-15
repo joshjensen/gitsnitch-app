@@ -1,4 +1,22 @@
+"#row": {
+	layout: "vertical",
+	width: Ti.UI.FIT
+}
 
-".container" : {
-  
+"#fileName": {
+	top: 10,
+	left: 10,
+	height: 20,
+	color: "#565656",
+	verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,	
+	font: {
+		fontSize: 16
+	}
+}
+
+"#developers": {
+	top: 5,
+	layout: "vertical",
+	width: Ti.UI.FIT
 }

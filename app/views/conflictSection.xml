@@ -1,0 +1,9 @@
+<Alloy>
+	<TableViewSection id="conflictSection" class="conflictSection">
+		<HeaderView>
+        	<View class="conflictSectionHeader">
+        		<Label text="Possible Conflicts" id="conflictLabel" />
+        	</View>
+    	</HeaderView>
+	</TableViewSection>
+</Alloy>

@@ -1,0 +1,18 @@
+"#conflictLabel": {
+	height: 40, 
+	left: 10,
+	width: Ti.UI.SIZE,
+	verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color: "#a94442",
+	font: {
+		fontSize: 14
+	}
+}
+
+".conflictSectionHeader": {
+	backgroundColor: "#f2dede",
+	borderColor: "#ebccd1",
+	borderWidth: 1,
+	height: 40
+}
