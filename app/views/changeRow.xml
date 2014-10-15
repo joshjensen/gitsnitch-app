@@ -1,4 +1,12 @@
 <Alloy>
-	<View class="container">
-	</View>
+    <TableViewRow id="row">
+        <Label id="fileName" />
+        <Label id="gitHash" />	
+        <View id="developer">
+			<Label id="name" />
+			<View id="statusWrapper">
+				<Label id="status" />
+			</View>        	
+        </View>
+    </TableViewRow>
 </Alloy>
