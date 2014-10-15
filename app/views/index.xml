@@ -1,6 +1,8 @@
 <Alloy>
 	<Window class="container">
 		<Widget src="com.mcongrove.navigationBar" id="navigationBar" />
-		<TableView id="commitTable" /> 
+		<TableView id="commitTable">
+			<RefreshControl id="pullToRefresh" />
+		</TableView> 
 	</Window>
 </Alloy>
